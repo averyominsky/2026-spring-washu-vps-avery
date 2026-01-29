@@ -4,103 +4,133 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blueprint Coffee</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            line-height: 1.5;
+        }
+
+        h1 {
+            font-family: cursive;
+            text-align: center;
+            color: #0221ea;
+        }
+
+        details {
+            margin: 15px auto;
+            width: 90%;
+            max-width: 600px;
+            font-size: 1.1em;
+        }
+
+        summary {
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 1.3em;
+            color: #8b87e0;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+    </style>
 </head>
 <body>
 
-<h1 id="blueprint-coffee" style="font-family: cursive; text-align: center; color: #cf1ea3;">Blueprint Coffee</h1>
+<h1 id="blueprint-coffee">Blueprint Coffee</h1>
 
-<blockquote>8:00 AM - 4:00 PM</blockquote>
+<!-- Drop-down for contact info -->
+<details>
+    <summary>Contact Info</summary>
+    <p>8:00 AM - 4:00 PM</p>
+    <p>622 Delmar BLVD STL, MO</p>
+    <p>(314) 266-6808</p>
+</details>
 
-<blockquote>622 Delmar BLVD STL, MO</blockquote>
+<!-- Drop-down for menu -->
+<details>
+    <summary>Menu</summary>
 
-<blockquote>(314) 266-6808</blockquote>
-<a href="https://blueprintcoffee.com/">Visit Blueprint Coffee</a>
+    <h2>Bakery</h2>
+    <ul>
+        <li>Buttermilk Biscuit</li>
+        <li>Chocolate Chip Cookie</li>
+        <li>Oatmeal Cookie</li>
+        <li>Banana Bread</li>
+        <li>Power Bar</li>
+        <li>Apple Scone</li>
+        <li>Cheddar + Green Onion Scone</li>
+        <li>Pumpkin Cream Cheese Muffin</li>
+        <li>Snickerdoodle Cookie</li>
+        <li>Maple Cookie</li>
+        <li>Peppermint Crinkles</li>
+        <li>Cinnamon Cardamom Granola</li>
+    </ul>
 
-<h2>Bakery</h2>
-<ul>
-    <li> Buttermilk Biscuit 
-        <li> Chocolate Chip Cookie </li>
-        <li> Oatmeal Cookie </li>
-        <li> Banana Bread </li>
-        <li> Power Bar </li>
-        <li> Apple Scone </li>
-        <li> Cheddar + Green Onion Scone </li>
-        <li> Pumpkin Cream Cheese Muffin </li>
-        <li> Snickerdoodle Cookie </li>
-        <li> Maple Cookie </li>
-        <li> Peppermint Crinkles </li>
-        <li> Cinnamon Cardamom Granola
-    </li>
-</ul>
+    <h2>Kitchen</h2>
+    <ul>
+        <li>Egg Biscuit Sandwich</li>
+        <li>Overnight Oats</li>
+    </ul>
 
-<h2>Kitchen</h2>
+    <h2>Drinks</h2>
+    <h2>Espresso</h2>
+    <ul>
+        <li>Americano</li>
+        <li>Rhode Islander</li>
+        <li>Macchiato</li>
+        <li>Cortado</li>
+    </ul>
 
-<ul>
-    <li>Egg Biscuit Sandwich</li>
-    <li>Overnight Oats</li>
-</ul>
+    <h2>House Syrup</h2>
+    <ul>
+        <li>Vanilla Bean</li>
+        <li>Askinosie Chochalte Carmel</li>
+        <li>Lavender</li>
+        <li>Chai</li>
+        <li>Strawberry</li>
+    </ul>
 
-<h2>Drinks</h2>
+    <h2>Milk</h2>
+    <ul>
+        <li>Whole</li>
+        <li>2%</li>
+        <li>Oat</li>
+        <li>Almond</li>
+    </ul>
 
-<h2>Espresso</h2>
+    <h2>Milk Tea</h2>
+    <ul>
+        <li>Chai Latte</li>
+        <li>Dirty Chai</li>
+        <li>Matcha</li>
+    </ul>
 
-<ul>
-    <li> Americano </li>
-    <li> Rhode Islander </li>
-    <li> Macchiato </li>
-    <li> Cortado </li>
-</ul>
+    <h2>Steeped Tea</h2>
+    <ul>
+        <li>Black Tea</li>
+        <li>Oolong Tea</li>
+        <li>Green Tea</li>
+        <li>White Tea</li>
+        <li>Ginger, turmeric, citrus, black pepper</li>
+        <li>Peppermint, rosehip, chamomile</li>
+        <li>Hibiscus, lemongrass, citrus</li>
+    </ul>
 
-<h2>House Syrup</h2>
+    <h2>Iced Tea</h2>
+    <ul>
+        <li>Black Iced Tea</li>
+        <li>Red Iced Tea</li>
+    </ul>
 
-<ul>
-    <li> Vanilla Bean </li>
-    <li> Askinosie Chochalte Carmel </li>
-    <li> Lavender </li>
-    <li> Chai </li> 
-    <li> Strawberry </li>
-</ul>
+    <h2>Seasonal</h2>
+    <ul>
+        <li>The Stache</li>
+        <li>Orange Cardamon Latte</li>
+        <li>Peppermint Mocha</li>
+    </ul>
 
-<h2>Milk</h2>
-
-<ul>
-    <li> Whole </li>
-    <li> 2% </li>
-    <li> Oat </li>
-    <li> Almond </li>
-</ul>
-
-<h2>Milk Tea</h2>
-<ul>
-    <li> Chai Latte </li>
-    <li> Dirty Chai </li>
-    <li> Matcha </li>
-</ul>
-<h2>Steeped Tea</h2>    
-<ul>
-    <li> Black Tea </li>
-    <li> Oolong Tea </li>
-    <li> Green Tea </li>
-    <li> White Tea </li>
-    <li> Ginger, turmeric, citrus, black pepper </li>
-    <li> Peppermint, rosehip, chammomile </li>
-    <li> Hibiscus, lemongrass, citrus </li>
-</ul>   
-
-<h2>Iced Tea</h2>
-
-<ul>
-    <li> Black Iced Tea </li>
-    <li> Red Iced Tea </li>
-</ul>
-
-<h2>Seasonal</h2>
-
-<ul>
-    <li> The Stache </li>
-    <li> Orange Cardamon Latte </li>
-    <li> Peppermint Mocha </li>
-</ul>   
+</details>
 
 </body>
 </html>
