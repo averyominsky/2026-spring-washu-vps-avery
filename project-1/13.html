@@ -8,13 +8,38 @@
         /* Headers: h1 and h2 use Comic Sans MS */
         h1, h2 {
             font-family: 'Comic Sans MS', cursive, sans-serif;
+            text-align: center; /* center headers */
         }
 
         /* h1 styling */
         h1 {
-            text-align: center;
             color: #26e4e8;
             font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        /* Body text and blockquotes */
+        body, blockquote, a, ul, li {
+            font-family: 'Times New Roman', Times, serif;
+            color: #333;
+            text-align: center; /* center all text */
+        }
+
+        /* Center the lists properly */
+        ul {
+            display: inline-block; /* makes the list shrink to content */
+            text-align: left;      /* keeps bullets aligned */
+            margin: 0 auto 30px auto; /* centers the list on the page */
+            padding-left: 20px;    /* standard indent for bullets */
+        }
+
+        blockquote {
+            font-style: italic;
+            margin: 10px 0;
+        }
+
+        a {
+            text-decoration: underline;
         }
     </style>
 </head>
