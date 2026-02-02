@@ -4,111 +4,184 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blueprint Coffee</title>
+    <style>
+        body {
+            font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            font-family: Montserrat, sans-serif;
+            font-weight: 100; /* Extra-thin weight */
+            letter-spacing: 0.1em; /* Slight spacing like in the logo */
+            text-transform: uppercase; /* Logo uses all caps */
+            font-size: 3rem; /* Adjust as needed */
+            color: #1627a5; /* Black text, adjust for your design */            font-size: 5em;
+            text-align: center;
+            margin: 0;
+            position: fixed;
+            right: 0;
+            top: 10px;
+            left: 0;
+        }
+        /* * {
+            border: 1px solid red;
+            padding: 0.5em;
+            margin: 1em;
+        } */
+         a {
+            color: black;
+            background: rgb(35, 214, 190);
+            text-decoration: none;
+            display: inline-block;
+            /* padding: 1em; */
+            /* width: 100px;
+            height: 100px; */
+         }
+         #welcome {
+            margin-top: 10em;
+         }
+         img {
+            max-width: 100%;
+         }
+         .toast {
+            float: left;
+            margin-right: 1em;
+            margin-bottom: 1em;
+         }
+         #welcome {
+            padding: 1em;
+         }
+         #entrees {
+            display: flex;
+         }
+         #entrees div {
+            padding: 1em;
+            padding-top: 0;
+         }
+         .first {
+            /* background: yellow; */
+         }
+         .second {
+            /* background: cyan; */
+         }
+    </style>
 </head>
 <body>
 
-<h1 id="blueprint-coffee" style="font-family: cursive; text-align: center; color: #bd0e92;">Blueprint Coffee</h1>
-<p class="hours"><strong>WHERE</strong> 8:00 AM — 4:00 PM</p>
-<p class="address"><strong>WHEN</strong> 622 Delmar Blvd, St. Louis, MO</p>
-<p class="phone"><strong>WHO</strong> (314) 266-6808</p>
-</div>
+    <h1 id="telva-at-the-ridge">
+        BLUEPRINT COFFEE
+    </h1>
+    
+    
+    <section id="welcome">
+        <em>
+BLUEPRINT COFFEE IS A ST. LOUIS COFFEE BAR         </em>
 
-<style>
-/* Make WHO, WHERE, WHEN big and pink */
-.hours strong,
-.address strong,
-.phone strong {
-    color: #ef88d3;   /* bright pink */
-    font-size: 2em;   /* make it bigger */
-}
-</style>
+        <p>
+            <b>Location:</b>
+        <a href="https://www.google.com/maps/place/blueprint+coffee+on+the+loop/data=!4m2!3m1!1s0x87df355598195f9d:0x37ea828f113c5c1f?sa=X&ved=1t:242&ictx=111">6225 Delmar Blvd, St. Louis, MO 63130</a></li>
+            </p>
 
-<hr class="fancy-line">
+        <p>
+            <b>Hours:</b>
+            Everyday 8am - 4pm
+      
+        </p>
 
-<h2>Bakery</h2>
-<ul>
-    <li> Buttermilk Biscuit 
-        <li> Chocolate Chip Cookie </li>
-        <li> Oatmeal Cookie </li>
-        <li> Banana Bread </li>
-        <li> Power Bar </li>
-        <li> Apple Scone </li>
-        <li> Cheddar + Green Onion Scone </li>
-        <li> Pumpkin Cream Cheese Muffin </li>
-        <li> Snickerdoodle Cookie </li>
-        <li> Maple Cookie </li>
-        <li> Peppermint Crinkles </li>
-        <li> Cinnamon Cardamom Granola
-    </li>
-</ul>
+        <p>
+            <b>Contact:</b>
+        +13142666808
+            </p>
+    </section>
 
-<h2>Kitchen</h2>
+    <hr>
 
-<ul>
-    <li>Egg Biscuit Sandwich</li>
-    <li>Overnight Oats</li>
-</ul>
+    <section id="entrees">
 
-<h2>Drinks</h2>
+        <div class="first">
 
-<h2>Espresso</h2>
+            <p>
+                <strong>Breakfast Sendvic</strong><br>
+                <em>Fresh Bread, Sunny Egg, Cheese, Herbed Ajvar Mayo</em><br>
+                <code>$10</code>
+            </p>
+            
+            <p>
+                <strong>Sloppy Mustafa Tost</strong><br>
+                <em>Moussaka Seasoned Beef, Cheese, Sunny Egg, Herbs, Union Loafers Sourdough</em><br>
+                <code>$16</code>
+            </p>
 
-<ul>
-    <li> Americano </li>
-    <li> Rhode Islander </li>
-    <li> Macchiato </li>
-    <li> Cortado </li>
-</ul>
+            <p>
+                <strong>Hummus Toast (V)</strong><br>
+                <em>Creamy Chickpea Salad, Pickled Onions, Greens, Union Loafers, Sourdough</em><br>
+                <code>$16</code>
+            </p>
 
-<h2>House Syrup</h2>
+            <p>
+                <strong>Telva Avocado Tost</strong><br>
+                <em>Roasted Tomato, Cucumber, Feta, Olive, Tzatziki, Sesame Crunch, Herbs, Union Loafers Sourdough</em><br>
+                <code>$14</code>
+            </p>
 
-<ul>
-    <li> Vanilla Bean </li>
-    <li> Askinosie Chochalte Carmel </li>
-    <li> Lavender </li>
-    <li> Chai </li> 
-    <li> Strawberry </li>
-</ul>
+        </div>
 
-<h2>Milk</h2>
+        <div class="second">
 
-<ul>
-    <li> Whole </li>
-    <li> 2% </li>
-    <li> Oat </li>
-    <li> Almond </li>
-</ul>
+            <p>
+                <strong>Sweet Przenice (Custard Soaked Toasted Bread)</strong><br>
+                <em>Rotating variety, please ask about today's preparation</em><br>
+                <code>$15</code>
+            </p>
 
-<h2>Milk Tea</h2>
-<ul>
-    <li> Chai Latte </li>
-    <li> Dirty Chai </li>
-    <li> Matcha </li>
-</ul>
-<h2>Steeped Tea</h2>    
-<ul>
-    <li> Black Tea </li>
-    <li> Oolong Tea </li>
-    <li> Green Tea </li>
-    <li> White Tea </li>
-    <li> Ginger, turmeric, citrus, black pepper </li>
-    <li> Peppermint, rosehip, chammomile </li>
-    <li> Hibiscus, lemongrass, citrus </li>
-</ul>   
-<h2>Iced Tea</h2>
+            <p>
+                <strong>Tikva Salata</strong><br>
+                <em>Baby Kale, Fire-Roasted Delicata Squash, Radish, Feta, Pepita Dressing, Orange, Dates, Crispy Chickpeas</em><br>
+                <code>$15</code>
+            </p>
+            
+            <p>
+                <strong>Cilbir (Turkish Eggs)</strong><br>
+                <em>2 Sunny Eggs, Garlic Yogurt, Tomato-Chile Brown Butter, Herbs, Toasted Somun</em><br>
+                <code>$16</code>
+            </p>
 
-<ul>
-    <li> Black Iced Tea </li>
-    <li> Red Iced Tea </li>
-</ul>
+            <p>
+                <strong>Baklava Yogurt Parfait</strong><br>
+                <em>House-Made Yogurt, Baklava Granola, Crispy Phyllo, Agda</em><br>
+                <code>$12</code>
+            </p>
 
-<h2>Seasonal</h2>
+            <p>
+                <strong>Breakfast Pide</strong><br>
+                <em>Wood Fired Flatbrea, Runny Egg, Cheese, Herbs</em><br>
+                <code>$18</code>
+            </p>
 
-<ul>
-    <li> The Stache </li>
-    <li> Orange Cardamon Latte </li>
-    <li> Peppermint Mocha </li>
-</ul>   
+        </div>
+
+    </section>
+
+    <section id="sides">
+        <h3>Sides</h3>
+        <p>
+            Buttonwood Farm Fresh Egg <code>$3</code>
+        </p>
+        <p>
+            Sudzuka (Beef Sausage) <code>$5</code>
+        </p>
+        <p>
+            Bolyards Beef Bacon <code>$5</code>
+        </p>
+        <p>
+            Turkey Bacon <code>$4</code>
+        </p>
+        <p>
+            Somun Bread <code>$3</code>
+        </p>
+        <p>
+            Union Loafer Sourdough <code>$3</code>
+        </p>
+    </section>
 
 </body>
 </html>
