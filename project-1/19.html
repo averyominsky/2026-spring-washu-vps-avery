@@ -32,11 +32,33 @@
             left: 0;
         }
         
-        {h2 font-family: Montserrat, sans-serif;
+        h2{ font-family: Montserrat, sans-serif;
              color: var(--teal);
             
             
         
+        }
+
+        /* */
+
+        .wrapper {
+            overflow: hidden;
+        }
+
+        .image-row {
+            display: flex;
+            gap: 10px;
+            width: max-content;
+            animation: slideInfinite 15s linear infinite;
+        }
+
+        @keyframes slideInfinite {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(-50%);
+            }
         }
         /* * {
             border: 1px solid red;
@@ -140,13 +162,20 @@ BLUEPRINT COFFEE IS A ST. LOUIS COFFEE BAR
     <hr>
 <h2>A GLIMPSE </h2>
 
-<section class="image-row">
-    <img src="Caramel-Iced-Coffee-6.jpg" alt="Coffee">
-    <img src="lemon-iced-tea.jpg" alt="Latte art">
-    <img src="Chocolate-Chip-Cookies-15-1200-1.jpg" alt="Pastries">
-    <img src="AmericanoHotandIced-3.webp" alt="Coffee shop interior">
-    <img src="Banana-Bread-Recipe-6.jpg" alt="Coffee shop exterior">
-</section>
+<div class="wrapper">
+    <section class="image-row">
+        <img src="Caramel-Iced-Coffee-6.jpg" alt="Coffee">
+        <img src="lemon-iced-tea.jpg" alt="Latte art">
+        <img src="Chocolate-Chip-Cookies-15-1200-1.jpg" alt="Pastries">
+        <img src="AmericanoHotandIced-3.webp" alt="Coffee shop interior">
+        <img src="Banana-Bread-Recipe-6.jpg" alt="Coffee shop exterior">
+        <img src="Caramel-Iced-Coffee-6.jpg" alt="Coffee">
+        <img src="lemon-iced-tea.jpg" alt="Latte art">
+        <img src="Chocolate-Chip-Cookies-15-1200-1.jpg" alt="Pastries">
+        <img src="AmericanoHotandIced-3.webp" alt="Coffee shop interior">
+        <img src="Banana-Bread-Recipe-6.jpg" alt="Coffee shop exterior">
+    </section>
+</div>
 
 
     
@@ -162,10 +191,7 @@ BLUEPRINT COFFEE IS A ST. LOUIS COFFEE BAR
                 <br> Banana Bread <br> 
                 <code>$8.00</code>
             </p>
-            
-            <p>
-            
-            </p>
+        
 
             <p>
                 <strong>Kitchen </strong><br>
