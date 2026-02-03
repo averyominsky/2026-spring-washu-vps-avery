@@ -4,111 +4,199 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blueprint Coffee</title>
+
+    <style>
+        :root {
+            --teal: rgb(64, 52, 238);
+        }
+
+        body {
+            font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        h1 {
+            font-family: Montserrat, sans-serif;
+            font-weight: 100;
+            letter-spacing: 0.1em;
+            color: var(--teal);
+            font-size: 3em;
+            text-align: center;
+            margin: 0;
+            text-transform: uppercase;
+            position: fixed;
+            top: 10px;
+            left: 0;
+            right: 0;
+            background: white;
+        }
+#welcome {
+    text-align: center;
+}
+        .space {
+            height: 10em;
+        }
+
+        hr {
+            border: none;
+            border-bottom: 2px solid var(--teal);
+            margin: 1em 0;
+        }
+
+        #entrees {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, auto);
+            gap: 2em;
+            padding: 2em;
+            text-align: center;
+        }
+
+        #entrees p {
+            margin: 0;
+        }
+
+        strong {
+            letter-spacing: 0.05em;
+        }
+
+        code {
+            display: block;
+            margin-top: 0.5em;
+        }
+
+        #sides, #outro {
+            text-align: center;
+            padding: 2em;
+        }
+
+        #sides h3 {
+            color: var(--teal);
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            font-weight: 300;
+        }
+    </style>
 </head>
+
+
 <body>
 
-<h1 id="blueprint-coffee" style="font-family: cursive; text-align: center; color: #bd0e92;">Blueprint Coffee</h1>
-<p class="hours"><strong>WHERE</strong> 8:00 AM — 4:00 PM</p>
-<p class="address"><strong>WHEN</strong> 622 Delmar Blvd, St. Louis, MO</p>
-<p class="phone"><strong>WHO</strong> (314) 266-6808</p>
-</div>
+    
+    <h1>Blueprint Coffee</h1>
 
-<style>
-/* Make WHO, WHERE, WHEN big and pink */
-.hours strong,
-.address strong,
-.phone strong {
-    color: #ef88d3;   /* bright pink */
-    font-size: 2em;   /* make it bigger */
-}
-</style>
+    <div class="space"></div>
 
-<hr class="fancy-line">
+    <section id="welcome">
+        
+        <section id="welcome">
+        <em>BLUEPRINT COFFEE IS A ST. LOUIS COFFEE BAR</em>
+    </section>  
+      <p></p>
+            6225 Delmar Blvd, St. Louis, MO 63130
 
-<h2>Bakery</h2>
-<ul>
-    <li> Buttermilk Biscuit 
-        <li> Chocolate Chip Cookie </li>
-        <li> Oatmeal Cookie </li>
-        <li> Banana Bread </li>
-        <li> Power Bar </li>
-        <li> Apple Scone </li>
-        <li> Cheddar + Green Onion Scone </li>
-        <li> Pumpkin Cream Cheese Muffin </li>
-        <li> Snickerdoodle Cookie </li>
-        <li> Maple Cookie </li>
-        <li> Peppermint Crinkles </li>
-        <li> Cinnamon Cardamom Granola
-    </li>
-</ul>
+        <p>
+           Everyday 8am - 4pm<br>
+ 
+        </p>
 
-<h2>Kitchen</h2>
+        <p>
+        
+            +13142666808
+            
+        </p>
+        <hr>
+       
+    
+    <section id="entrees">
 
-<ul>
-    <li>Egg Biscuit Sandwich</li>
-    <li>Overnight Oats</li>
-</ul>
+        <!-- ROW 1 -->
+        <p>
+            <strong>Bakery</strong><br>
+            <em>Buttermilk Biscuit</em><br>
+            Chocolate Chip Cookie<br>
+            Oatmeal Cookie<br>
+            Banana Bread
+            <code>$8.00</code>
+        </p>
 
-<h2>Drinks</h2>
+        <p>
+            <strong>Kitchen</strong><br>
+            <em>Egg Biscuit Sandwich</em><br>
+            <em>Overnight Oats</em>
+            <code>$10.00</code>
+        </p>
 
-<h2>Espresso</h2>
+        <p>
+            <strong>Milk</strong><br>
+            <em>Whole</em><br>
+            <em>2%</em><br>
+            <em>Oat</em><br>
+            <em>Almond</em>
+            <code>$1.00</code>
+        </p>
 
-<ul>
-    <li> Americano </li>
-    <li> Rhode Islander </li>
-    <li> Macchiato </li>
-    <li> Cortado </li>
-</ul>
+        <p>
+            <strong>Iced Tea</strong><br>
+            <em>Black Iced Tea</em><br>
+            <em>Red Iced Tea</em>
+            <code>$4.00</code>
+        </p>
 
-<h2>House Syrup</h2>
+        <!-- ROW 2 -->
+        <p>
+            <strong>Espresso</strong><br>
+            Americano<br>
+            Rhode Islander<br>
+            Macchiato<br>
+            Cortado
+            <code>$5.00</code>
+        </p>
 
-<ul>
-    <li> Vanilla Bean </li>
-    <li> Askinosie Chochalte Carmel </li>
-    <li> Lavender </li>
-    <li> Chai </li> 
-    <li> Strawberry </li>
-</ul>
+        <p>
+            <strong>House Syrup</strong><br>
+            Vanilla Bean<br>
+            Chocolate Caramel<br>
+            Lavender<br>
+            Chai<br>
+            Strawberry
+            <code>$0.50</code>
+        </p>
 
-<h2>Milk</h2>
+        <p>
+            <strong>Steeped Tea</strong><br>
+            Black Tea<br>
+            Green Tea<br>
+            Oolong Tea<br>
+            White Tea
+            <code>$4.00</code>
+        </p>
 
-<ul>
-    <li> Whole </li>
-    <li> 2% </li>
-    <li> Oat </li>
-    <li> Almond </li>
-</ul>
+        <p>
+            <strong>Milked Tea</strong><br>
+       Chai Latte<br>
+            Dirty Chai<br>
+           Matcha<br>
+            <code>$5.00</code>        </p>
 
-<h2>Milk Tea</h2>
-<ul>
-    <li> Chai Latte </li>
-    <li> Dirty Chai </li>
-    <li> Matcha </li>
-</ul>
-<h2>Steeped Tea</h2>    
-<ul>
-    <li> Black Tea </li>
-    <li> Oolong Tea </li>
-    <li> Green Tea </li>
-    <li> White Tea </li>
-    <li> Ginger, turmeric, citrus, black pepper </li>
-    <li> Peppermint, rosehip, chammomile </li>
-    <li> Hibiscus, lemongrass, citrus </li>
-</ul>   
-<h2>Iced Tea</h2>
+    </section>
 
-<ul>
-    <li> Black Iced Tea </li>
-    <li> Red Iced Tea </li>
-</ul>
+    <hr>
 
-<h2>Seasonal</h2>
+    <section id="sides">
+        <h3>Seasonal</h3>
+        <p>The Stache <code>$6.00</code></p>
+        <p>Orange Cardamon Latte <code>$6.00</code></p>
+        <p>Peppermint Mocha <code>$6.00</code></p>
+    </section>
 
-<ul>
-    <li> The Stache </li>
-    <li> Orange Cardamon Latte </li>
-    <li> Peppermint Mocha </li>
-</ul>   
+    <hr>
+
+    <section id="outro">
+        “So I walked in at 3:30 on a Saturday and this place is jumping??  
+        I suppose caffeine knows no time cutoff, lol.”  
+        <br><br>— Austin S. on Yelp
+    </section>
 
 </body>
 </html>
