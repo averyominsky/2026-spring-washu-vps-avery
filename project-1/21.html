@@ -151,7 +151,7 @@ a.link {
 
 
 
-.menu-summary {
+.Bakery {
   list-style: none;      
   cursor: pointer;
   display: flex;
@@ -159,18 +159,47 @@ a.link {
   align-items: center;
 }
 
-.menu-summary::-webkit-details-marker {
-  display: none;           
+
+
+.Drinks {
+  flex-direction: column;
+  align-items: center;
+}
+
+.Tea {
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.Seasonal {
+  flex-direction: column;
+  align-items: center;
 }
 
 .caption {
-  margin-top: 6px;
-  font-size: 0.85rem;
-  color: #555;
+  margin-top: 7px;
+  font-size: 3 em;
+  color: rgb(241, 15, 166);
 }
 
+.caption2 {
+  margin-top: 7px;
+  font-size: 3 em;
+  color: rgb(241, 15, 166);
+}
 
-
+.caption3 {
+  margin-top: 7px;
+  font-size: 3 em;
+  color: rgb(241, 15, 166);
+}
+.caption4 {
+  margin-top: 7px;
+  font-size: 3 em;
+  color: rgb(241, 15, 166);
+}
 
 .review-carousel {
   position: relative;
@@ -237,6 +266,9 @@ a.link {
 
   <hr>
 
+
+
+  
   <section id="sides">
     <h3>MENU</h3>
    <br>
@@ -244,14 +276,13 @@ a.link {
     <div class="dropdowns">
       <details>
     
-        <summary class="menu-summary">
+        <summary class="Bakery">
     <img src="cookie.jpg" alt="Food Menu">
-    <span class="caption">Bakery Items</span>
+    <span class="caption"><strong>Bakery Items</strong></span>
   </summary>
 
   
         <p>
-        <strong>Bakery Items:<br></strong>
         <br>Buttermilk Biscuit — 4.65
         <br>Chocolate Cookie — 3.00
         <br>Oatmeal Cookie — 3.30
@@ -266,12 +297,12 @@ a.link {
       </details>
 
       <details>
-        <summary>
-          
-          
-          <img src="coffee drawing 1.jpg" alt="Drinks Menu"></summary>
-        <p>
-            <strong>Coffee:<br></strong>
+  <summary class="Drinks">
+    <img src="coffee drawing 1.jpg" alt="Drinks">
+    <span class="caption2"><strong>Coffee</strong></span>
+  </summary>
+
+  <p>
             <br>Americano — 3.85
             <br>Macchiato — 5.30
             <br>Cortado — 5.30
@@ -297,9 +328,11 @@ a.link {
       </details>
 
       <details>
-        <summary><img src="tea.jpg" alt="Seasonal Menu"></summary>
+        <summary class="Tea"> 
+        <img src="tea.jpg" alt="Seasonal Menu">
+            <span class="caption3"><strong>Steeped Teas</strong></span>
+</summary>
         <p>
-            <strong>Steeped Teas:<br></strong>
             <br>Black Tea — 3.25
             <br>Green Tea — 3.50
             <br>Oolong Tea — 5.00
@@ -310,9 +343,11 @@ a.link {
             </p>
       </details>
        <details>
-        <summary><img src="snowflake.jpg" alt="Seasonal Menu"></summary>
+
+
+        <summary class="Seasonal"><img src="snowflake.jpg" alt="Seasonal Menu">
+        <span class="caption4"><strong>Seasonal Items</strong></span></summary>
         <p>
-            <strong>Seasonal:<br></strong>
             <br>Mint Mocha — 6.85<br>Orange Latte — 6.85<br>Pistachio Latte — 6.85</p>
       </details>
 
