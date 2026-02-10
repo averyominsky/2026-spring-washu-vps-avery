@@ -1,321 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blueprint Coffee</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blueprint Coffee</title>
 
-    
-    <style>
-        :root {
-            --teal: rgb(106, 100, 173);
-        }
+  <style>
+    :root {
+      --teal: rgb(106, 100, 173);
+      --header-footer: rgb(205, 238, 255);
+    }
 
-       .info  {
-     --teal: rgb(228, 228, 243);
-}
+    body {
+      font-family: Montserrat, sans-serif;
+      font-weight: 100;
+      margin: 0;
+      padding: 0;
+    }
 
+    h1 {
+      font-family: Montserrat, sans-serif;
+      font-weight: 100;
+      letter-spacing: 0.1em;
+      color: var(--teal);
+      font-size: 3em;
+      text-align: center;
+      margin: 0;
+      text-transform: uppercase;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: var(--header-footer);
+      z-index: 10;
+      padding: 0.5em 0;
+    }
 
-        body {
-            font-family: Montserrat, sans-serif;
-            font-weight: 100;
-            margin: 0;
-        }
+    .space {
+      height: 120px; /* space under fixed header */
+    }
 
+    #welcome {
+      text-align: center;
+      padding: 2em 1em;
+    }
 
-        
-        h1 {
-            font-family: Montserrat, sans-serif;
-            font-weight: 100;
-            letter-spacing: 0.1em;
-            color: var(--teal);
-            font-size: 3em;
-            text-align: center;
-            margin: 0;
-            text-transform: uppercase;
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            background: rgb(205, 238, 255);
-            position: hover;            
-        }
-  h2{ font-family: s, sans-serif;
-             color: var(--teal);
-            
-            
-        
-        }
+    .info {
+      border: 2px solid var(--teal);
+      padding: 2em;
+      margin: 2em auto;
+      max-width: 600px;
+      background: rgb(230, 245, 255);
+      border-radius: 12px;
+      box-shadow: 2px 4px 10px rgba(0,0,0,0.1);
+    }
 
-        
+    .info a {
+      color: black;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 0.5em;
+    }
 
-        /* */
+    .wrapper {
+      overflow: hidden;
+      margin: 2em 0;
+    }
 
-        .wrapper {
-            overflow: hidden;
-        }
+    .image-row {
+      display: flex;
+      gap: 10px;
+      width: max-content;
+      animation: slideInfinite 15s linear infinite;
+    }
 
-        .image-row {
-            display: flex;
-            gap: 10px;
-            width: max-content;
-            animation: slideInfinite 15s linear infinite;
-        }
+    @keyframes slideInfinite {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
 
-        @keyframes slideInfinite {
-            from {
-                transform: translateX(0);
-            }
-            to {
-                transform: translateX(-50%);
-            }
-        }
-        /* * {
-            border: 1px solid red;
-            padding: 0.5em;
-            margin: 1em;
-        } */
-         a {
-            color: black;
-            background: var(--teal);
-            text-decoration: none;
-            display: inline-block;
-            /* padding: 1em; */
-            /* width: 100px;
-            height: 100px; */
-         }
-         .space {
-            height: 10em;
-         }
-         img {
-            max-width: 100%;
-         }
-         .toast {
-            float: left;
-            margin-right: 1em;
-            margin-bottom: 1em;
-         }
-         #welcome {
-            padding: 1em;
-            padding-top: 2em;
-         }
-         #entrees {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            gap: 1em;
-            padding: 1em 0;
-         }
-         #entrees p {
-            text-align: center;
-         }
-         #welcome,
-         #sides {
-            text-align: center;
-         }
-         hr {
-            margin: 0;
-            padding: 0;
-            border: 0;
-            border-bottom: 2px solid var(--teal);
-         }
-         .first {
-            /* background: yellow; */
-            border-right: 2px solid var(--teal);
-            padding-right: 1em;
-         }
-         .second {
-            /* background: lime; */
-         }
-         #outro {
-            padding: 2em 0;
-            text-align: center;
-         }
-         img {
-    width: 300px;
-    height: auto;
-}
+    hr {
+      border: none;
+      border-bottom: 2px solid var(--teal);
+      margin: 2em 0;
+    }
 
-<hr>
+    #sides {
+      text-align: center;
+      padding: 2em 1em;
+    }
 
+    .dropdowns {
+      display: flex;
+      justify-content: center;
+      gap: 2em;
+      flex-wrap: wrap;
+    }
 
+    details {
+      text-align: center;
+      width: 150px;
+    }
 
+    details summary {
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+    }
 
+    details summary img {
+      width: 50px;
+      height: auto;
+    }
 
-    </style>
+    details p {
+      margin-top: 0.5em;
+    }
+
+    .bottom-space {
+      background: var(--header-footer);
+      padding: 2em 1em;
+      text-align: center;
+      color: var(--teal);
+      font-style: italic;
+      font-size: 1.2em;
+    }
+
+    img {
+      width: 300px;
+      height: auto;
+    }
+
+    @media(max-width: 600px) {
+      .image-row { flex-wrap: wrap; justify-content: center; }
+      details { width: 120px; }
+    }
+  </style>
 </head>
 <body>
 
-   <h1>Blueprint Coffee</h1>
+  <h1>Blueprint Coffee</h1>
+  <div class="space"></div>
 
-    <div class="space"></div>
+  <section id="welcome">
+    <div class="info">
+      <strong>˚⟡˖ ࣪ BLUEPRINT COFFEE IS A ST. LOUIS COFFEE BAR ˚⟡˖ ࣪</strong>
+      <p>Everyday 8am - 4pm</p>
+      <p>+1 314-266-6808</p>
+      <a href="https://www.google.com/maps/place/blueprint+coffee+on+the+loop">6225 Delmar Blvd, St. Louis, MO 63130</a>
+    </div>
+  </section>
 
-   <section id="welcome">
-  <div class="info">
-<strong>˚⟡˖ ࣪   BLUEPRINT COFFEE IS A ST. LOUIS COFFEE BAR   ˚⟡˖ ࣪</strong>
-<p> </p> 
-  <p>Everyday 8am - 4pm</p>
-    <p>+1 314-266-6808</p>
-   <a href="https://www.google.com/maps/place/blueprint+coffee+on+the+loop/data=!4m2!3m1!1s0x87df355598195f9d:0x37ea828f113c5c1f?sa=X&ved=1t:242&ictx=111">6225 Delmar Blvd, St. Louis, MO 63130</a></li>
-            </p>
-       
+  <hr>
 
-
-  
-  </div>
-</section>
-
-<style>
-.info {
-    border: 2px solid var(--teal);       /* teal border */
-    padding: 2em;                        /* space inside the box */
-    margin: 2em auto;                     /* center box with space above/below */
-    max-width: 600px;                     /* optional: keeps box from being too wide */
-    text-align: center;                   /* center the text */
-    background: rgb(230, 245, 255);       /* subtle light background */
-    border-radius: 12px;                  /* rounded corners */
-    box-shadow: 2px 4px 10px rgba(0,0,0,0.1); /* soft shadow */
-}
-
-.welcome-box:hover {`
-    transform: translateY(-5px);          /* subtle lift on hover */
-    box-shadow: 4px 8px 15px rgba(0,0,0,0.15);
-}
-</style>
-
-
-
-
-
-
-
-
-
-
-
-<h2> </h2>
-        <hr>
-
-<div class="wrapper">
+  <div class="wrapper">
     <section class="image-row">
-        <img src="Caramel-Iced-Coffee-6.jpg" alt="Coffee">
-        <img src="lemon-iced-tea.jpg" alt="Latte art">
-        <img src="Chocolate-Chip-Cookies-15-1200-1.jpg" alt="Pastries">
-        <img src="AmericanoHotandIced-3.webp" alt="Coffee shop interior">
-        <img src="Banana-Bread-Recipe-6.jpg" alt="Coffee shop exterior">
-        <img src="Caramel-Iced-Coffee-6.jpg" alt="Coffee">
-        <img src="lemon-iced-tea.jpg" alt="Latte art">
-        <img src="Chocolate-Chip-Cookies-15-1200-1.jpg" alt="Pastries">
-        <img src="AmericanoHotandIced-3.webp" alt="Coffee shop interior">
-        <img src="Banana-Bread-Recipe-6.jpg" alt="Coffee shop exterior">
+      <img src="Caramel-Iced-Coffee-6.jpg" alt="Coffee">
+      <img src="lemon-iced-tea.jpg" alt="Latte art">
+      <img src="Chocolate-Chip-Cookies-15-1200-1.jpg" alt="Pastries">
+      <img src="AmericanoHotandIced-3.webp" alt="Coffee shop interior">
+      <img src="Banana-Bread-Recipe-6.jpg" alt="Coffee shop exterior">
     </section>
-</div>
+  </div>
 
-   <hr>
+  <hr>
 
-    <hr>
-    
+  <section id="sides">
+    <h3>MENU</h3>
+    <div class="dropdowns">
+      <details>
+        <summary><img src="coffee-icon-logo-template-design-vector-10330730 copy.jpeg" alt="Food Menu"></summary>
+        <p>Bakery Items:<br>Buttermilk Biscuit<br>Banana Bread<br>Chocolate Chip Cookie</p>
+      </details>
 
-    <section id="entrees">
+      <details>
+        <summary><img src="coffee-icon-logo-template-design-vector-10330730 copy.jpeg" alt="Drinks Menu"></summary>
+        <p>Drinks:<br>Americano<br>Latte<br>Chai Latte</p>
+      </details>
 
-        
-         
-    </section>
+      <details>
+        <summary><img src="coffee-icon-logo-template-design-vector-10330730 copy.jpeg" alt="Seasonal Menu"></summary>
+        <p>Seasonal:<br>Peppermint Mocha<br>Orange Cardamom Latte<br>The Stache</p>
+      </details>
+    </div>
+  </section>
 
-  
-
-    <section id="sides">
-        <h3>MENU</h3>
-        
-        <style>
-
-
-summary {
-  list-style: none; /* remove default arrow */
-  cursor: pointer;
-}
-
-
-
-
-
-summary img {
-  width: 50px; /* adjust size */
-  height: auto;
-}
-
-/* Optional: style the dropdown content */
-details[open] p {
-  padding: 1em 0;
-}
-</style>
-
- <!-- Food Dropdown -->
-  <details>
-    <summary>
-      <img src="coffee-icon-logo-template-design-vector-10330730 copy.jpeg" alt="Food Menu">
-    </summary>
-    <p>Bakery Items:<br>Buttermilk Biscuit<br>Banana Bread<br>Chocolate Chip Cookie</p>
-  </details>
-
-  <!-- Drinks Dropdown -->
-  <details>
-    <summary>
-      <img src="coffee-icon-logo-template-design-vector-10330730 copy.jpeg" alt="Drinks Menu">
-    </summary>
-    <p>Drinks:<br>Americano<br>Latte<br>Chai Latte</p>
-  </details>
-
-  <!-- Seasonal Dropdown -->
-  <details>
-    <summary>
-      <img src="coffee-icon-logo-template-design-vector-10330730 copy.jpeg" alt="Seasonal Menu">
-    </summary>
-    <p>Seasonal:<br>Peppermint Mocha<br>Orange Cardamon Latte<br>The Stache</p>
-  </details>
-</div>
-
-</body>
-</html>
-<!-- This template was adapted from Jisu Lee, Home Sweet Home -->
-  
-  
-</details>
-
-
-
-
-
-
-    </section>
-
-</p> </p> 
-    <section id="outro">
-        "<em>So I walked in at 3:30 on a saturday and this place is jumping?? I suppose caffeine knows no time cutoff, lol.
-</em>" <br><br>— Austin S. on Yelp
-    </section>
-    <hr>
-
-   
-
-<!-- FOOTER -->
-    <footer class="bottom-space"></footer>
-</body>
-
-<style>
-.bottom-space {
-    height: 50px;                 
-    background: rgb(205, 238, 255);  
-    width: 100%;                  
-    display: block;
-}
-</style>
-
-
-
-
-
-
-
+  <footer class="bottom-space">
+    "<em>So I walked in at 3:30 on a saturday and this place is jumping?? I suppose caffeine knows no time cutoff, lol.</em>" <br><br>— Austin S. on Yelp
+  </footer>
 
 </body>
 </html>
