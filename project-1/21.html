@@ -52,7 +52,7 @@
     }
 
     .space {
-      height: 120px; /* space under fixed header */
+      height: 120px; 
     }
 
     #welcome {
@@ -146,7 +146,28 @@
     }
 
 a.link {
-  color: rgb(241, 15, 166);  /* the orange/teal color */}
+  color: rgb(241, 15, 166);  }
+
+
+
+
+.menu-summary {
+  list-style: none;      
+  cursor: pointer;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+}
+
+.menu-summary::-webkit-details-marker {
+  display: none;           
+}
+
+.caption {
+  margin-top: 6px;
+  font-size: 0.85rem;
+  color: #555;
+}
 
 
 
@@ -221,7 +242,13 @@ a.link {
    <br>
     <div class="dropdowns">
       <details>
-        <summary><img src="cookie.jpg" alt="Food Menu"></summary>
+    
+        <summary class="menu-summary">
+    <img src="cookie.jpg" alt="Food Menu">
+    <span class="caption">Bakery Menu</span>
+  </summary>
+
+  
         <p>
         <strong>Bakery Items:<br></strong>
         <br>Buttermilk Biscuit — 4.65
@@ -238,7 +265,10 @@ a.link {
       </details>
 
       <details>
-        <summary><img src="coffee drawing 1.jpg" alt="Drinks Menu"></summary>
+        <summary>
+          
+          
+          <img src="coffee drawing 1.jpg" alt="Drinks Menu"></summary>
         <p>
             <strong>Coffee:<br></strong>
             <br>Americano — 3.85
@@ -322,7 +352,8 @@ a.link {
     reviews[currentReview].classList.remove('active');
     currentReview = (currentReview + 1) % reviews.length;
     reviews[currentReview].classList.add('active');
-  }, 4000); // changes every 4 seconds
+  }, 4000); 
+  
 </script>
 
 
