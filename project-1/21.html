@@ -151,6 +151,25 @@ a.link {
 
 
 
+.review-carousel {
+  position: relative;
+  max-width: 700px;
+  margin: 0 auto;
+  min-height: 120px;
+}
+
+.review {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 1s ease;
+  left: 0;
+  right: 0;
+}
+
+.review.active {
+  opacity: 1;
+}
+
 
 
 
@@ -167,7 +186,7 @@ a.link {
       <strong>˚⟡˖ ࣪ BLUEPRINT COFFEE IS A ST. LOUIS COFFEE BAR ˚⟡˖ ࣪</strong>
       <p>Everyday 8am - 4pm</p>
       <p>+1 314-266-6808</p>
-     <a href="https://www.google.com/maps/place/blueprint+coffee+on+the+loop" class="link">
+     <a href="https://www.google.com/maps/place/blueprint+coffee+on+the+loop/data=!4m2!3m1!1s0x87df355598195f9d:0x37ea828f113c5c1f?sa=X&ved=1t:242&ictx=111" class="link">
   6225 Delmar Blvd, St. Louis, MO 63130
 </a>
 
@@ -271,9 +290,44 @@ a.link {
     </div>
   </section>
 
-  <footer class="bottom-space">
-    "<em>So I walked in at 3:30 on a saturday and this place is jumping?? I suppose caffeine knows no time cutoff, lol.</em>" <br><br>— Austin S. on Yelp
-  </footer>
+
+
+
+<footer class="bottom-space">
+  <div class="review-carousel">
+    <div class="review active">
+      “So I walked in at 3:30 on a Saturday and this place is jumping?? I suppose caffeine knows no time cutoff, lol.”
+      <br><br>— Austin S. on Yelp
+    </div>
+
+    <div class="review">
+      “The place was packed because of course it was. Good coffee attracts a crowd.”
+      <br><br>— Sara G. on Yelp
+    </div>
+
+    <div class="review">
+      “The baristas work hard to bring the best coffee.”
+      <br><br>— Irene N. on Yelp
+    </div>
+  </div>
+</footer>
+
+
+
+<script>
+  const reviews = document.querySelectorAll('.review');
+  let currentReview = 0;
+
+  setInterval(() => {
+    reviews[currentReview].classList.remove('active');
+    currentReview = (currentReview + 1) % reviews.length;
+    reviews[currentReview].classList.add('active');
+  }, 4000); // changes every 4 seconds
+</script>
+
+
+
+
 
 </body>
 </html>
