@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blueprint Coffee</title>
+
+    <style>
+        :root {
+            --teal: rgb(31, 21, 166);
+        }
+
+        body {
+            font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        h1 {
+            font-family: Montserrat, sans-serif;
+            font-weight: 100;
+            letter-spacing: 0.1em;
+            color: var(--teal);
+            font-size: 3em;
+            text-align: center;
+            margin: 0;
+            text-transform: uppercase;
+            position: fixed;
+            top: 10px;
+            left: 0;
+            right: 0;
+            background: rgb(191, 228, 246);
+            position: static;            
+        }
+  h2{ font-family: Montserrat, sans-serif;
+             color: var(--teal);
+            
+            
+        
+        }
+
+        /* */
+
+        .wrapper {
+            overflow: hidden;
+        }
+
+        .image-row {
+            display: flex;
+            gap: 10px;
+            width: max-content;
+            animation: slideInfinite 15s linear infinite;
+        }
+
+        @keyframes slideInfinite {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(-50%);
+            }
+        }
+        /* * {
+            border: 1px solid red;
+            padding: 0.5em;
+            margin: 1em;
+        } */
+         a {
+            color: black;
+            background: var(--teal);
+            text-decoration: none;
+            display: inline-block;
+            /* padding: 1em; */
+            /* width: 100px;
+            height: 100px; */
+         }
+         .space {
+            height: 10em;
+         }
+         img {
+            max-width: 100%;
+         }
+         .toast {
+            float: left;
+            margin-right: 1em;
+            margin-bottom: 1em;
+         }
+         #welcome {
+            padding: 1em;
+            padding-top: 2em;
+         }
+         #entrees {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 1em;
+            padding: 1em 0;
+         }
+         #entrees p {
+            text-align: center;
+         }
+         #welcome,
+         #sides {
+            text-align: center;
+         }
+         hr {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            border-bottom: 2px solid var(--teal);
+         }
+         .first {
+            /* background: yellow; */
+            border-right: 2px solid var(--teal);
+            padding-right: 1em;
+         }
+         .second {
+            /* background: lime; */
+         }
+         #outro {
+            padding: 2em 0;
+            text-align: center;
+         }
+         img {
+    width: 300px;
+    height: auto;
+}<hr>
+    </style>
+</head>
+<body>
+
+   <h1>Blueprint Coffee</h1>
+
+    <div class="space"></div>
+
+    <section id="welcome">
+        
+        <section id="welcome">
+        <em>BLUEPRINT COFFEE IS A ST. LOUIS COFFEE BAR</em>
+    </section>  
+      <p></p>
+            6225 Delmar Blvd, St. Louis, MO 63130
+
+        <p>
+           Everyday 8am - 4pm<br>
+ 
+        </p>
+
+        <p>
+        
+            +13142666808
+            
+        </p>
+        <hr>
+
+    <hr>
+<h2> </h2>
+
+<div class="wrapper">
+    <section class="image-row">
+        <img src="Caramel-Iced-Coffee-6.jpg" alt="Coffee">
+        <img src="lemon-iced-tea.jpg" alt="Latte art">
+        <img src="Chocolate-Chip-Cookies-15-1200-1.jpg" alt="Pastries">
+        <img src="AmericanoHotandIced-3.webp" alt="Coffee shop interior">
+        <img src="Banana-Bread-Recipe-6.jpg" alt="Coffee shop exterior">
+        <img src="Caramel-Iced-Coffee-6.jpg" alt="Coffee">
+        <img src="lemon-iced-tea.jpg" alt="Latte art">
+        <img src="Chocolate-Chip-Cookies-15-1200-1.jpg" alt="Pastries">
+        <img src="AmericanoHotandIced-3.webp" alt="Coffee shop interior">
+        <img src="Banana-Bread-Recipe-6.jpg" alt="Coffee shop exterior">
+    </section>
+</div>
+
+
+    
+
+    <section id="entrees">
+
+        
+         
+    </section>
+
+    <hr>
+
+    <section id="sides">
+        <h3>MENU</h3>
+        <style>
+
+
+summary {
+  list-style: none; /* remove default arrow */
+  cursor: pointer;
+}
+
+/* Make the image inside summary behave like a button */
+summary img {
+  width: 50px; /* adjust size */
+  height: auto;
+}
+
+/* Optional: style the dropdown content */
+details[open] p {
+  padding: 1em 0;
+}
+</style>
+
+<details>
+  <summary>
+    <img src="coffee-icon-logo-template-design-vector-10330730 copy.jpeg" alt="Click me for dropdown">
+  </summary>
+  <p>DRINKS HERE</p>
+  
+</details>
+
+
+
+
+
+
+    </section>
+
+    <hr>
+
+    <section id="outro">
+        "<em>So I walked in at 3:30 on a saturday and this place is jumping?? I suppose caffeine knows no time cutoff, lol.
+</em>" <br><br>— Austin S. on Yelp
+    </section>
+    <hr>
+
+</body>
+</html>
