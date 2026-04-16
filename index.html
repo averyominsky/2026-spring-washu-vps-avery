@@ -104,5 +104,31 @@ a:hover {
     </ul>
 </div>
 
+
+java script 
+
+//change the color of the 1 heading to dif shades of pink 
+<script>
+    const colors = [
+        "#ffb6c1",
+        "#ff69b4",
+        "#ff1493",
+        "#ffc0cb",
+        "#db7093"
+    ];
+
+    let index = 0;
+    const heading = document.querySelector(".header h1");
+
+    // add smooth transition USING JS
+    heading.style.transition = "color 1.5s ease-in-out";
+
+    setInterval(() => {
+        heading.style.color = colors[index];
+        index = (index + 1) % colors.length;
+    }, 2000); // slower so the transition can complete
+    
+</script>
+
 </body>
 </html>
